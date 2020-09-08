@@ -1,0 +1,97 @@
+*:not(i){
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+#rt-banner-content{
+  padding-top:7em;
+}
+a#mailto{
+  color:white;
+}
+.logo{
+  border-radius: .5em;
+}
+
+button#submit {
+    width: 100%;
+    margin-top: 2.5em;
+}
+span.input-iconbadge.pass {
+    margin-top: .99em;
+}
+..portfolio-badge.kes {
+    width: 50%;
+}
+div#banner404{
+    max-height: 25% !important;
+}
+div#bannerpass {
+    max-height: 27% !important;
+}
+h5.f-results {
+    font-size: 30px;
+}
+.cabin-class{
+  font-size: 10px;
+  border-radius: 5px;
+}
+div#note,div#in-out-div{
+  max-height: 10%;
+}
+select#select-1 {
+    margin-top: 1em !important;
+}
+.col-xl-9.mx-auto.col-lg-10 {
+    margin-top: -5em !important;
+}
+.flt-dtls-box.rt-mb-30 {
+    margin-top: -3em !important;
+}
+.rt-widget.final-booking {
+    margin-top: -5em !important;
+}
+.credit-card{
+width: 50px !important;
+height: 35px !important;
+}
+select#mm {
+    margin-top: 1em !important;
+}
+a#first-tab {
+    width: 100% !important;
+    border-radius:0 !important;
+}
+a#second-tab {
+    width: 100% !important;
+    border-radius:0 !important;
+}
+
+@media screen and (max-width: 600px) {
+  a#first-tab {
+    margin-left: -12.3em !important;
+    width: 200!important;
+}
+  div#confirm-booking{
+    display: none !important;
+  }
+  .rt-widget.final-booking {
+    margin-top: 0em !important;
+}
+  }
+}
+div#ui-datepicker-div {
+    margin-top: 1em !important;
+}
+p.wow.fade-in-top.text-white.animated {
+    margin-bottom: 5em !important;
+}
+div#note {
+    margin-top: 5em;
+}
+div#home-banner{
+   -webkit-transition: background 700ms ease-out 700ms;
+    -moz-transition: background 700ms ease-out 700ms;
+    -o-transition: background 700ms ease-out 700ms;
+    transition: background 700ms ease-out 700ms;
+
+}
