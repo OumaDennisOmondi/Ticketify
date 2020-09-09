@@ -147,10 +147,10 @@ else{
                         </li>
 
                     <?php if (! isset($_SESSION['user'])){ ?>
-                      <li><a href="#"><i class="fas fa-ticket-alt"></i>Search Booking</a></li>
+                      <li><a href="#" data-target="#rtmodal-2" data-toggle="modal"><i class="fa fa-search"></i>Search Booking</a></li>
                       <li><a href="#" data-target="#rtmodal-1" data-toggle="modal"><i class="far fa-user-circle"></i>Sign in | Join</a></li>
                     <?php } else{ ?>
-                      <li><a href="logout"><i class="far fa-sign-out"></i>Log out</a></li>
+                      <li><a href="account/logout"><i class="far fa-sign-out"></i>Log out</a></li>
                       <li><a href="#"><i class="fas fa-ticket-alt"></i>My Bookings</a></li>
                     <?php  } ?>
 
@@ -231,14 +231,7 @@ else{
                       <span class="error" style="color: red;"><?php echo $errors; ?></span>
                         <input type="email" name="email" class="form-control pill rt-mb-15" placeholder="Email">
                         <input type="password" name="password" class="form-control pill rt-mb-15" placeholder="Password">
-                        <div class="form-group forgot-pass">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheckss">
-                                <label class="form-check-label" for="gridCheckss">
-                                     Remember Password
-                                </label>
-                            </div><!-- ./orm-group -->
-                        </div>
+                        
                             <input type="submit" name="login" class="rt-btn rt-gradient pill d-block text-uppercase " value="Log In">
                     </form>
                     <div class="ac-register">
@@ -272,15 +265,36 @@ else{
 
                     </div><!-- /.ac-register -->
                 </div><!-- /.rt-modal-input -->
-                <div class="rt-modal-footer">
-                    <span>Or</span>
-                    <h4>Sign Up with social media</h4>
-                    <ul class="rt-social rt-circle-style2">
+                <div >
+                    <br /><br />
+                </div><!-- /.rt-modal-footer -->
+            </div>
+        </div>
+    </div>
+</div>
 
-                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
-                    </ul>
+<!--search bookin  modal-->
+
+<div class="modal fade" id="rtmodal-2" tabindex="-1" role="dialog" aria-labelledby="rtmodal-2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered rt-lgoinmodal " role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="rt-modal-headr rt-mb-20 one">
+                    <img src="http://localhost/ticketify/assets/images/logo/Logo-icon.png" alt="modal logo" draggable="false">
+                    <h4>Search Booking</h4>
+                    <p>Enter the Confirmation or PNR REF No.</p>
+                </div><!-- /.rt-modal-headr -->
+                <div class="rt-modal-input one">
+                    <form action="account/booking-details.php" method="POST" class="rt-form">
+                      <span class="error" style="color: red;"><?php echo $errors; ?></span>
+                        <input type="text" name="bkconfirm" class="form-control pill rt-mb-15" placeholder="Confirmation/Pnref No" autocomplete="off">
+
+                            <input type="submit" name="search" class="rt-btn rt-gradient pill d-block text-uppercase " value="Search">
+                    </form>
+                </div><!-- /.rt-modal-input -->
+
+                <div >
+                    <br /><br />
                 </div><!-- /.rt-modal-footer -->
             </div>
         </div>

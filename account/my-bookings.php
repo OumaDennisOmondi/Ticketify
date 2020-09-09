@@ -3,7 +3,7 @@
   require('../includes/header.php');
   $bookings=null;
   $info="";
-  $stmt = $conn->prepare('SELECT * FROM bookings WHERE booking_user = ?');
+  $stmt = $conn->prepare('SELECT * FROM bookings WHERE booking_user = ? ORDER BY id DESC');
   $stmt->execute([$_SESSION['user']]);
   $rowCount = $stmt->rowCount();
   if($rowCount < 1){
@@ -69,15 +69,45 @@ img#img-404{
                         </p>
                       </div>
                     <?php else: ?>
-                      <?php foreach ($bookings as $booking ): ?>
+                      <?php foreach ($bookings as $booking ): $status=$booking->booking_status;?>
+
                         <tr>
                         <td><?php echo $booking->booking_id ?></td>
                         <td><?php echo $booking->booking_confirmation ?></td>
                         <td><?php echo $booking->booking_pnref ?></td>
                         <td><?php echo $booking->booking_status ?></td>
                         <td>
-                          <a href="#" class="btn btn-primary">View More</a>
-                          <a href="#" class="btn btn-danger">Cancel</a>
+                            <?php if ($status == "UNPAID"): ?>
+
+                                <a href='#' class="btn btn-primary view-more" data-target="#m<?php echo $booking->booking_confirmation ?>" data-toggle="modal" >View Details</a>
+                              <!--modal -->
+                                <div class="modal fade" id="m<?php echo $booking->booking_confirmation ?>" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered rt-lgoinmodal " role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body p-5" style="text-align: left;">
+                                                    <img src="http://localhost/ticketify/assets/images/logo/Logo-icon.png" alt="modal logo" draggable="false">
+                                                    <div style="font-size: 11px;font-weight: 500;">
+                                                    <h4 style="align-self: center">Booking Details</h4><hr />
+                                                    <p>Email : <?php echo $booking->booking_user ?></p><hr />
+                                                    <p>ID : <?php echo $booking->booking_id ?></p><hr />
+                                                    <p>Confirmation : <?php echo $booking->booking_confirmation ?></p><hr />
+                                                    <p>PNR REF : <?php echo $booking->booking_pnref ?></p><hr />
+                                                    <p>Payment : <?php echo $booking->booking_status ?></p><hr />
+                                                    <p>Passengers : <?php echo $booking->booking_adults.' Adults '.$booking->booking_child.' Child'.$booking->booking_infant.' Infants' ?></p><hr />
+                                                    </div>
+                                                <div >
+                                                    <br /><br />
+                                                </div><!-- /.rt-modal-footer -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger" onclick="alert('You cant cancel a booking which was not ticketed!')"><a href="#"></a>Cancel</button>
+
+                            <?php else: ?>
+                              <a href="#" class="btn btn-primary" >View More</a>
+                              <a href="#" class="btn btn-danger">Cancel</a>
+                            <?php endif; ?>
                         </td>
                         </tr>
                       <?php endforeach; ?>
@@ -95,6 +125,18 @@ img#img-404{
 <!--
     !============= Footer Area Start ===========!
  -->
+<!-- <script defer>
+  //open modals
+  var btn = document.getElementsByClassName("view-more");
+ for (var i = 0; i < btn.length; i++) {
+  var thisBtn = btn[i];
+  thisBtn.addEventListener("click", function(){
+    var modal = document.getElementById(this.dataset.modal);
+    modal.style.display = "block";
+    alert(i)
+}, false);
+}
+</script> -->
 <?php
 require('../includes/footer.php');
 ?>
