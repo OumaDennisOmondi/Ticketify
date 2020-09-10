@@ -52,8 +52,45 @@ img#img-404{
               <img style="width:300px;height: 400px !important; "class="img-responsive" src="assets/images/acc.png"/>
 
               <div class="card-body">
-                <h5 class="card-title">My Profile</h5>
-                <a href="#" class="btn btn-primary">Go to Profile</a>
+                <div class="dropdown dropright">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    My Profile
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" data-target="#rtmodal-12" data-toggle="modal">Change Password</a>
+
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="rtmodal-12" tabindex="-1" role="dialog" aria-labelledby="rtmodal-12" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered rt-lgoinmodal " role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="rt-modal-headr rt-mb-20 one">
+                                        <img src="http://localhost/ticketify/assets/images/logo/Logo-icon.png" alt="modal logo" draggable="false">
+                                        <h4>Change Password</h4>
+                                    </div><!-- /.rt-modal-headr -->
+                                    <div class="rt-modal-input one">
+                                        <form action="change-password.php" method="POST" class="rt-form">
+                                          <span class="error" style="color: red;"><?php echo $errors; ?></span>
+                                            <input type="password" name="old-password" class="form-control pill rt-mb-15" placeholder="Old Password" autocomplete="off">
+                                            <input type="password" name="new-password" class="form-control pill rt-mb-15" placeholder="New Password" autocomplete="off">
+
+                                                <input type="submit" name="change" class="rt-btn rt-gradient pill d-block text-uppercase " value="Change Password">
+                                        </form>
+                                        <div class="ac-register">
+
+                                        </div><!-- /.ac-register -->
+                                    </div><!-- /.rt-modal-input -->
+                                    <div >
+                                        <br /><br />
+                                    </div><!-- /.rt-modal-footer -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
             </div>
             </div>

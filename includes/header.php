@@ -150,7 +150,7 @@ else{
                       <li><a href="#" data-target="#rtmodal-2" data-toggle="modal"><i class="fa fa-search"></i>Search Booking</a></li>
                       <li><a href="#" data-target="#rtmodal-1" data-toggle="modal"><i class="far fa-user-circle"></i>Sign in | Join</a></li>
                     <?php } else{ ?>
-                      <li><a href="account/logout"><i class="far fa-sign-out"></i>Log out</a></li>
+                      <li><a href="/ticketify/account/logout"><i class="far fa-sign-out"></i>Log out</a></li>
                       <li><a href="#"><i class="fas fa-ticket-alt"></i>My Bookings</a></li>
                     <?php  } ?>
 
@@ -231,7 +231,7 @@ else{
                       <span class="error" style="color: red;"><?php echo $errors; ?></span>
                         <input type="email" name="email" class="form-control pill rt-mb-15" placeholder="Email">
                         <input type="password" name="password" class="form-control pill rt-mb-15" placeholder="Password">
-                        
+
                             <input type="submit" name="login" class="rt-btn rt-gradient pill d-block text-uppercase " value="Log In">
                     </form>
                     <div class="ac-register">
@@ -285,7 +285,7 @@ else{
                     <p>Enter the Confirmation or PNR REF No.</p>
                 </div><!-- /.rt-modal-headr -->
                 <div class="rt-modal-input one">
-                    <form action="account/booking-details.php" method="POST" class="rt-form">
+                    <form action="/ticketify/account/search-booking.php" method="POST" class="rt-form">
                       <span class="error" style="color: red;"><?php echo $errors; ?></span>
                         <input type="text" name="bkconfirm" class="form-control pill rt-mb-15" placeholder="Confirmation/Pnref No" autocomplete="off">
 
