@@ -1,5 +1,5 @@
 
-<section class="rt-site-footer" data-scrollax-parent="true">
+<section class="rt-site-footer" data-scrollax-parent="true"  id="sub">
 <div class="rt-shape-emenetns-1" style="background-image: url(http://localhost/ticketify/assets/images/shape-elements/shape-4.png)" data-scrollax="properties: { translateY: '340px' }"></div><!-- /.rt-shape-emenetns-1 -->
 <div class="footer-top rtbgprefix-cover" style="background-image: url(http://localhost/ticketify/assets/images/backgrounds/footerbg.png)">
     <div class="footer-subscripbe-box wow fade-in-bottom">
@@ -17,15 +17,19 @@
                </div><!-- /.col-lg-7 -->
            </div><!-- /.row -->
         <div class="section-title-spacer"></div><!-- /.section-title-spacer -->
-        <div class="row">
+        <form action="/ticketify/account/subs.php" method="POST">
+        <div class="row" >
             <div class="col-lg-7 mx-auto">
                 <div class="input-group mb-5">
-                    <input type="text" class="form-control" style="color:white;font-size:16px;"placeholder="Enter your email address" aria-describedby="button-addon2">
+
+                    <input type="email" required class="form-control" name="email" style="color:white;font-size:16px; width:100%" placeholder="Enter your email address" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                        <button class="btn" type="button" id="button-addon2">Subcribe Now</button>
+                        <button class="btn" type="submit" name="sub" id="button-addon2">Subcribe Now</button>
                     </div>
+
                 </div><!-- end input gorup -->
             </div><!-- /.col-lg-7 -->
+            </form>
         </div><!-- /.row -->
            <div class="rt-dot-divider"></div><!-- /.rt-dot-divider -->
        </div><!-- /.container -->

@@ -1,6 +1,7 @@
 <?php
  require_once('../config/db.php');
   require('../includes/header.php');
+  if(isset($_POST['bkconfirm']) && $_POST['bkconfirm'] != null){
   $bookings=null;
   $info="";
   $stmt = $conn->prepare('SELECT * FROM bookings WHERE booking_id = ? ORDER BY id DESC');
@@ -13,6 +14,10 @@
     //fetch password
   $bookings = $stmt->fetchAll();
   }
+}
+else{
+$rowCount=0;
+}
 ?>
 <style>
 .rt-breadcump .rt-breadcump-height {
@@ -129,7 +134,7 @@ img#img-404{
         <div class="row">
           <div class="alert alert-warning" style="width: 100%;  text-align: center;">
             <h5>
-              <i class="far fa-sad-tear"></i> Oops!No bookings matching that ID was found |
+              <i class="far fa-sad-tear fa-2x" style=""></i> Oops! No booking matching that ID was found |
               <a href="#" data-target="#rtmodal-2" data-toggle="modal">Try Again</a>
             </h5>
           </div>
