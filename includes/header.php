@@ -282,12 +282,12 @@ else{
                 <div class="rt-modal-headr rt-mb-20 one">
                     <img src="http://localhost/ticketify/assets/images/logo/Logo-icon.png" alt="modal logo" draggable="false">
                     <h4>Search Booking</h4>
-                    <p>Enter the Confirmation or PNR REF No.</p>
+                    <p>Search by Booking ID / Confirmation Code or PNR REF No.</p>
                 </div><!-- /.rt-modal-headr -->
                 <div class="rt-modal-input one">
                     <form action="/ticketify/account/search-booking.php" method="POST" class="rt-form">
                       <span class="error" style="color: red;"><?php echo $errors; ?></span>
-                        <input type="text" name="bkconfirm" class="form-control pill rt-mb-15" placeholder="Confirmation/Pnref No" autocomplete="off">
+                        <input type="text" name="bkconfirm" class="form-control pill rt-mb-15" placeholder="Booking ID / Confirmation/Pnref No" autocomplete="off">
 
                             <input type="submit" name="search" class="rt-btn rt-gradient pill d-block text-uppercase " value="Search">
                     </form>

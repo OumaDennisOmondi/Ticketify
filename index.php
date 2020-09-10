@@ -189,7 +189,7 @@ require('includes/header.php');
                                  Nairobi is also often used as a jumping-off point for safari trips elsewhere in Kenya
                             </p>
                             <div class="rt-button-group">
-                                <a href="#" class="rt-btn rt-gradient rt-rounded rt-Bshadow-2">Read More</a>
+                                <a href="https://www.tripadvisor.com/Tourism-g294207-Nairobi-Vacations.html" target="_blank" class="rt-btn rt-gradient rt-rounded rt-Bshadow-2">Read More</a>
                             </div>
                         </div><!-- /.deal-bottom-content -->
                     </div><!-- /.rt-section-title-wrapper -->
@@ -227,7 +227,7 @@ require('includes/header.php');
                                  collection of artefacts. On nearby Mengo Hill is Lubiri Palace, the former seat of the Buganda Kingdom
                             </p>
                             <div class="rt-button-group">
-                                <a href="#" class="rt-btn rt-gradient rt-rounded rt-Bshadow-2">Read More</a>
+                                <a href="https://www.tripadvisor.com/Tourism-g293841-Kampala_Central_Region-Vacations.html" target="_blank" class="rt-btn rt-gradient rt-rounded rt-Bshadow-2">Read More</a>
                               <!--  <a href="#" class="rt-btn rt-outline-gradientL rt-rounded">Help Me Plan My Trip</a>-->
                             </div>
                         </div><!-- /.deal-bottom-content -->
@@ -266,7 +266,7 @@ require('includes/header.php');
                                    of human ancestors found by anthropologist Louis Leakey.
                             </p>
                             <div class="rt-button-group">
-                                <a href="#" class="rt-btn rt-gradient rt-rounded rt-Bshadow-2">Read More</a>
+                                <a href="https://www.tripadvisor.com/Tourism-g293748-Dar_es_Salaam_Dar_Es_Salaam_Region-Vacations.html" target="_blank" class="rt-btn rt-gradient rt-rounded rt-Bshadow-2">Read More</a>
                             </div>
                         </div><!-- /.deal-bottom-content -->
                     </div><!-- /.rt-section-title-wrapper -->
@@ -363,6 +363,7 @@ require('includes/header.php');
         <div class="section-title-spacer"></div><!-- /.section-title-spacer -->
         <div class="row grid">
             <div class="col-lg-4 col-md-6 grid-item cat-1 cat-5 cat-4">
+              <a href="https://www.tripadvisor.com/Tourism-g294210-Mombasa_Coast_Province-Vacations.html" target="_blank">
                 <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/Mombasa.jpg)">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge kes">
@@ -374,8 +375,10 @@ require('includes/header.php');
 
                     </div><!-- /.inner-content -->
                 </div><!-- /.portfolio-box-1 -->
+              </a>
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-2 cat-3 cat-5">
+              <a href="https://www.tripadvisor.com/Tourism-g317064-Kisumu_Nyanza_Province-Vacations.html" target="_blank">
                 <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/kisumu.jpg)" data-wow-duration="1s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge kes">
@@ -387,8 +390,10 @@ require('includes/header.php');
 
                     </div><!-- /.inner-content -->
                 </div><!-- /.portfolio-box-1 -->
+              </a>
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-1 cat-4">
+              <a href="https://www.tripadvisor.com/Tourism-g317068-Ukunda_Coast_Province-Vacations.html" target="_blank">
                 <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/Ukunda.png)" data-wow-duration="1.3s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge kes">
@@ -400,8 +405,10 @@ require('includes/header.php');
 
                     </div><!-- /.inner-content -->
                 </div><!-- /.portfolio-box-1 -->
+              </a>
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-4 cat-3 cat-5">
+              <a href="https://www.tripadvisor.com/Tourism-g294208-Lamu_Island_Coast_Province-Vacations.html" target="_blank">
                 <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/Lamu.jpg)" data-wow-duration="1.6s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge kes">
@@ -412,8 +419,10 @@ require('includes/header.php');
                         <h6>Lamu</h6>
                     </div><!-- /.inner-content -->
                 </div><!-- /.portfolio-box-1 -->
+                </a>
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-1 cat-5">
+              <a href="https://www.tripadvisor.com/Tourism-g293748-Dar_es_Salaam_Dar_Es_Salaam_Region-Vacations.html" target="_blank">
                 <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/dar.jpg)" data-wow-duration="1.9s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge kes">
@@ -425,19 +434,22 @@ require('includes/header.php');
 
                     </div><!-- /.inner-content -->
                 </div><!-- /.portfolio-box-1 -->
+                </a>
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-3 cat-5">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/Lodwar.jpg)" data-wow-duration="2.2s">
+              <a href="https://www.tripadvisor.com/Tourism-g297913-Arusha_Arusha_Region-Vacations.html" target="_blank">
+                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/all-img/city/arusha.jpg)" data-wow-duration="2.2s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge kes">
                         <span>From</span>
-                        <span><sup>KES</sup> 6,950</span>
+                        <span><sup>KES</sup> 10,950</span>
                     </div><!-- /.portfolio-badge -->
                     <div class="inner-content text-white">
-                        <h6>Lodwar</h6>
+                        <h6>Arusha</h6>
 
                     </div><!-- /.inner-content -->
                 </div><!-- /.portfolio-box-1 -->
+                </a>
             </div><!-- /.col-md-4 -->
         </div><!-- /.row -->
         <div class="row">
