@@ -1,6 +1,20 @@
 <?php
-//import footer
+//import heade and config
+require_once('config/db.php');
 require('includes/header.php');
+$success=null;
+if(isset($_POST['submit'])){
+    $sql = 'INSERT INTO messages(name,phone,email,message) VALUES(:name, :phone, :email, :message)';
+    $stmt = $conn->prepare($sql);
+    $stmt->execute(['name' => $_POST['name'],'phone' => $_POST['phone'],'email' => $_POST['email'],'message' => $_POST['message']]);
+    $success="  Thanks for Contacting Us!<br />We will get back to you as soon as possible.";
+
+  }
+  else{
+  //$fail="Account with that email has already subscribed.<br />";
+
+  }
+
  ?>
 <div class="rt-breadcump rt-breadcump-height">
     <div class="rt-page-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/baner3.jpg)">
@@ -37,15 +51,20 @@ require('includes/header.php');
 
                         Get In Touch
                     </h2><!-- /.rt-section-title -->
+                      <?php if ($success !=null): ?>
+                        <div class="alert alert-success">
+                          <i class="far fa-check-circle fa-2x"></i><?php echo $success ?>| <a href="/ticketify"> Go Home</a>
+                        </div>
+                      <?php endif; ?>
                     <p>Any kind of travel/flights information don't hesitate to contact with us for imiditate
                     customer support. We are love to hear from you</p>
                     <div class="section-title-spacer"></div><!-- /.section-title-spacer -->
-                    <form action="#" class="rt-form rt-line-form">
-                        <input type="text" placeholder="Name" class="form-control rt-mb-30">
-                        <input type="text" placeholder="Phone (254728979121)" class="form-control rt-mb-30">
-                        <input type="email" placeholder="Email" class="form-control rt-mb-30">
-                        <textarea placeholder="Message" class="form-control rt-mb-30"></textarea>
-                        <input type="submit" value="SUBMIT NOW" class="rt-btn rt-gradient pill text-uppercase rt-mb-30">
+                    <form action="contact-us.php" class="rt-form rt-line-form" method="POST">
+                        <input type="text" placeholder="Name" name="name" class="form-control rt-mb-30" required>
+                        <input type="text" placeholder="Phone (254728979121)" name="phone" class="form-control rt-mb-30" required>
+                        <input type="email" placeholder="Email" name="email" class="form-control rt-mb-30" required>
+                        <textarea placeholder="Message" name="message" class="form-control rt-mb-30" required></textarea>
+                        <input type="submit" name="submit" value="SUBMIT NOW" class="rt-btn rt-gradient pill text-uppercase rt-mb-30" required>
                     </form>
                 </div><!-- /.rt-section-title-wrapper -->
             </div><!-- /.col-lg-9 -->

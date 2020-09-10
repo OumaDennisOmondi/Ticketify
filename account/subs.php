@@ -4,7 +4,7 @@ require_once('../config/db.php');
 $success=null;
 $fail=null;
 if(isset($_POST['sub'])){
-  //check if user exists
+
   $stmt = $conn->prepare('SELECT * FROM subs WHERE email = ?');
   $stmt->execute([$_POST['email']]);
   $rowCount = $stmt->rowCount();

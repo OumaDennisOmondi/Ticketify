@@ -197,7 +197,7 @@ else{
     </div>
 </div><!-- end main menu -->
             <div class="rt-nav-tolls d-flex align-items-center">
-    <span class="d-md-inline d-none"><a href="contact-us" class="rt-btn rt-gradient2 rt-rounded text-uppercase rt-Bshadow-1">Contact
+    <span class="d-md-inline d-none"><a href="/ticketify/contact-us" class="rt-btn rt-gradient2 rt-rounded text-uppercase rt-Bshadow-1">Contact
             Us</a></span>
 </div><hr/>
 
