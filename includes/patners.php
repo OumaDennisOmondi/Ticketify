@@ -20,7 +20,7 @@
                 <ul class="rt-border-brands">
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block">
-            <img src="assets\images\brands\dpo.png" alt="brands image" draggable="false">
+            <img src="assets\images\brands\saflink.png" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
@@ -30,12 +30,12 @@
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="1.5s">
-            <img src="assets\images\brands\saflink.png" alt="brands image" draggable="false">
+            <img src="assets\images\brands\jetways.png" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="2s">
-            <img src="assets\images\brands\jetways.png" alt="brands image" draggable="false">
+            <img src="assets\images\brands\aerolink.png" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
