@@ -11,7 +11,7 @@
       try{
         $sql = 'UPDATE bookings SET booking_status = :paid WHERE booking_id = :booking_id';
         $stmt = $conn->prepare($sql);
-        $stmt->execute(['paid' => 'UNPAID', 'booking_id' => $bookingId]);
+        $stmt->execute(['paid' => 'PAID', 'booking_id' => $bookingId]);
       //  echo 'Post Updated';
       }
       catch(PDOException $e){
